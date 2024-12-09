@@ -37,7 +37,7 @@
 ### Semester 2
 - 💻 **Automata, computability and complexity (ACC)** - [Available here](https://github.com/RalucaDavid/UNITBV-Info-Resources/tree/main/Year-2/Semester-2/ACC)
 - 💻 **Advanced programming methods (MAP)**
-- 💻 **Rețele de calculatoare (RC)**
+- 💻 **Computer Networks (RC)** - [Available here](https://github.com/RalucaDavid/Computer-Networks-Homeworks)
 - 🧮 **Numerical calculation (CN)**
 - 💻 **Modern 3D modeling systems in C++ (S3D) - OPTIONAL** 
 - 💻 **Build a real-time app using Angular, Net Core and SignalR	(BRTA) - OPTIONAL**
