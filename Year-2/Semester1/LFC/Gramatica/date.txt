@@ -1,0 +1,14 @@
+4
+S A B &
+3
+a b c
+S
+8
+S a&
+S aA
+S aB
+A cB
+B bA
+A c&
+B b
+& a

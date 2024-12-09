@@ -1,0 +1,8 @@
+M = ( {S, A, B, &, +}, {a, b, c}, delta, S, {+} )
+Delta is built this way:
+      a      b      c
+ S  { & A B }    -      -   
+ A    -      -    { B & } 
+ B    -    { A + }    -   
+ &  { + }    -      -   
+ +    -      -      -   
