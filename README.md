@@ -47,12 +47,12 @@
 ## 📅 **Year 3**
 
 ### Semester 1
-- 💻 **Software engineering (IS)**  
+- 💻 **Software engineering (IS)** - [Available here](https://github.com/RalucaDavid/Software-Engineering-Homeworks)  
 - 💻 **Human-computer interfaces (IOC)**  
-- 💻 **Web application development (DAW)**
+- 💻 **Web application development (DAW)** - [Available here](https://github.com/RalucaDavid/Web-Application-Development-Homeworks)
 - 💼 **Specialized practice**  
 - 💻 **Human computer interaction (IOCU) - OPTIONAL** 
-- 💻 **Software design patterns (SPS) - OPTIONAL** 
+- 💻 **Software design patterns (SPS) - OPTIONAL** - [Available here](https://github.com/RalucaDavid/Software-Design-Patterns-Exercises)
 
 ### Semester 2
 - 💻 **IT project management ()**  
