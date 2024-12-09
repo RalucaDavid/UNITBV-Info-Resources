@@ -27,7 +27,7 @@
 
 ### Semester 1
 - 💻 **Algorithmic graphs (AG)** - [Available here](https://github.com/RalucaDavid/Algorithmic-Graphs-Homeworks)
-- 💻 **Formal languages ​​and compilers (LFC)**  
+- 💻 **Formal languages ​​and compilers (LFC)** - [Available here](https://github.com/RalucaDavid/UNITBV-Info-Resources/tree/main/Year-2/Semester-1/LFC)  
 - 💻 **Programming environments and tools (MIP)** - [Available here](https://github.com/RalucaDavid/School-Catalog)
 - 💻 **Databases (BD)** - [Available here](https://github.com/RalucaDavid/UNITBV-Info-Resources/tree/main/Year-2/Semester-1/BD)
 - 💻 **Artificial intelligence (IA)** 
