@@ -26,12 +26,12 @@
 ## 📅 **Year 2**
 
 ### Semester 1
-- 💻 **Algorithmic graphs (AG)**  
+- 💻 **Algorithmic graphs (AG)** - [Available here](https://github.com/RalucaDavid/Algorithmic-Graphs-Homeworks)
 - 💻 **Formal languages ​​and compilers (LFC)**  
-- 💻 **Programming environments and tools (MIP)**
+- 💻 **Programming environments and tools (MIP)** - [Available here](https://github.com/RalucaDavid/School-Catalog)
 - 💻 **Databases (BD)**  
 - 💻 **Artificial intelligence (IA)** 
-- 💻 **Modern C++ managing networking projects (MC) - OPTIONAL** 
+- 💻 **Modern C++ managing networking projects (MC) - OPTIONAL** - [Available here](https://github.com/RalucaDavid/Gartic)
 - 🏃 **Physical education and sport 1**
 
 ### Semester 2
