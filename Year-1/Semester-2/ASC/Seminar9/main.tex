@@ -1,0 +1,225 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{tabularx}
+\usepackage{circuitikz}
+\usetikzlibrary{calc}
+\title{Problema 1 - seminar 9}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+\sloppy
+\large\textbf{Enunțul: }\normalsize Să se reprezinte cu porți XOR circuitul de conversie pe 3 biți din cod Gray în cod binar.
+
+\large\textbf{Informații necesare:}
+\normalsize\\
+\textbf{Poarta XOR:}
+\\ Tabelul de valorile al porții XOR:
+\begin{center}
+\begin{tabularx}{0.8\textwidth} { 
+  | >{\centering\arraybackslash}X 
+  | >{\centering\arraybackslash}X 
+  | >{\centering\arraybackslash}X | }
+ \hline
+   & 0 & 1 \\
+ \hline
+  0  & 0 & 1 \\
+ \hline
+  1 & 1 & 0 \\
+\hline
+\end{tabularx}
+\end{center}
+\text Desenul porții XOR: \\
+\begin{circuitikz}
+\draw (0,0) node[xor port] (xor1) {}
+(xor1.in 1) node[anchor=east] {A}
+(xor1.in 2) node[anchor=east] {B}
+(xor1.out) node[anchor=west] {Y};
+\end{circuitikz}\\
+\textbf{Codul Gray pe 3 biți:}
+\begin{center}
+\begin{tabular}{||c c||} 
+ \hline
+ Cod Gray & Număr \\ [0.5ex] 
+ \hline\hline
+ 000 & 0 \\ 
+ \hline
+ 001 & 1 \\
+ \hline
+ 011 & 2 \\
+ \hline
+ 010 & 3 \\
+ \hline
+ 110 & 4 \\ 
+ \hline
+ 111 & 5 \\
+ \hline
+ 101 & 6\\
+ \hline
+ 100 & 7 \\ 
+ \hline 
+\end{tabular}
+\end{center}
+\text Sunt așezați astfel încât au un bit diferență. \\ Mai multe informații despre codul Gray: https://www.infoarena.ro/coduri-gray\\
+\textbf{Pașii:}
+\begin{enumerate}
+  \item Identificarea funcției logice și expresiilor logice ale funcției.
+  \item Completarea tabelului de valori.
+  \item Reprezentarea circuitului logic.
+\end{enumerate}
+
+\large\textbf{Rezolvare:}\normalsize\\
+\textbf{Funcțiile logice:}\\
+\text Avem de găsit 3 funcții, fiecare pentru aflarea unei cifre a numărului în cod binar.\\ Vom nota cu:
+\begin{itemize}
+  \item a - prima cifră a numărului în cod Gray
+  \item b - a doua cifră a numărului în cod Gray
+  \item c - a treia cifră a numărului în cod Gray
+\end{itemize}
+Avem următorul tabel:
+\begin{center}
+\begin{tabular}{||c c||} 
+ \hline
+ Cod Gray & Cod Binar \\ [0.5ex] 
+ \hline\hline
+ 000 & 000 \\ 
+ \hline
+ 001 & 001 \\
+ \hline
+ 011 & 010 \\
+ \hline
+ 010 & 011 \\
+ \hline
+ 110 & 100 \\ 
+ \hline
+ 111 & 101 \\
+ \hline
+ 101 & 110 \\
+ \hline
+ 100 & 111 \\ 
+ \hline 
+\end{tabular}
+\end{center}
+\text Funcția 1:\\
+\text Putem observa cum prima cifră este aceeași la ambele coduri.
+\begin{center}
+\begin{tabular}{||c c||} 
+ \hline
+ Cod Gray & Cod Binar \\ [0.5ex] 
+ \hline\hline
+ \textbf{0}00 & \textbf{0}00 \\ 
+ \hline
+ \textbf{0}01 & \textbf{0}01 \\
+ \hline
+ \textbf{0}11 & \textbf{0}10 \\
+ \hline
+ \textbf{0}10 & \textbf{0}11 \\
+ \hline
+ \textbf{1}10 & \textbf{1}00 \\ 
+ \hline
+ \textbf{1}11 & \textbf{1}01 \\
+ \hline
+ \textbf{1}01 & \textbf{1}10 \\
+ \hline
+ \textbf{1}00 & \textbf{1}11 \\ 
+ \hline 
+\end{tabular}
+\end{center}
+Rezultă \textbf{f1(a)=a}, unde f1 este funcția pentru determinarea primei cifre a numărului în cod binar.\\ Funcția 2:\\ Putem observa că, dacă facem XOR dintre prima cifră (a) și a doua cifră (b) a numărului în cod Gray, obținem a doua cifră a numărului în cod binar.
+\begin{center}
+\begin{tabular}{||c c c c||} 
+\hline
+ a & b & $a \oplus b $& Numărul în cod binar \\ [0.5ex] 
+ \hline\hline
+ 0 & 0 & 0 & 0\textbf{0}0 \\ 
+ \hline
+ 0 & 0 & 0 & 0\textbf{0}1 \\
+ \hline
+ 0 & 1 & 1 & 0\textbf{1}0 \\
+ \hline
+ 0 & 1 & 1 & 0\textbf{1}1 \\
+ \hline
+ 1 & 1 & 0 & 1\textbf{0}0 \\ 
+ \hline
+ 1 & 1 & 0 & 1\textbf{0}1 \\
+ \hline
+ 1 & 0 & 1 & 1\textbf{1}0 \\
+ \hline
+ 1 & 0 & 1 & 1\textbf{1}1 \\ 
+ \hline 
+\end{tabular}
+\end{center}
+\text Rezultă \textbf{f2(a,b)=a $\oplus$ b}, unde f2 este funcția pentru determinarea cifrei a doua a numărului în cod binar.\\ Funcția 3:\\Observăm că obținem a treia cifră a numărului în cod binar, dacă luăm XOR-ul făcut anterior dintre prima cifră (a) și a doua cifră (b) a numărului în cod Gray și îl folosim într-un XOR cu a treia cifră (c) a numărului în cod Gray obținem a treia cifră a numărului în cod binar.
+\begin{center}
+\begin{tabular}{||c c c c||} 
+\hline
+ $a \oplus b $ & c & $(a \oplus b) \oplus c$ & Numărul în cod binar \\ [0.5ex] 
+ \hline\hline
+ 0 & 0 & 0 & 00\textbf{0} \\ 
+ \hline
+ 0 & 1 & 1 & 00\textbf{1} \\
+ \hline
+ 1 & 1 & 0 & 01\textbf{0} \\
+ \hline
+ 1 & 0 & 1 & 01\textbf{1} \\
+ \hline
+ 0 & 0 & 0 & 10\textbf{0} \\ 
+ \hline
+ 0 & 1 & 1 & 10\textbf{1} \\
+ \hline
+ 1 & 1 & 0 & 11\textbf{0} \\
+ \hline
+ 1 & 0 & 1 & 11\textbf{1} \\ 
+ \hline 
+\end{tabular}
+\end{center}
+\text Rezultă \textbf{f3(a,b,c)=(a $\oplus$ b) $\oplus$ c}, unde f3 este funcția pentru determinarea cifrei a treia a numărului în cod binar.\\
+\textbf{Tabelul de valori:}\\
+\text Avem cele trei funcții obținute:
+\begin{itemize}
+  \item f1(a)=a
+  \item f2(a,b)=a $\oplus$ b
+  \item f3(a,b,c)=(a $\oplus$ b) $\oplus$ c
+\end{itemize}
+\begin{center}
+\begin{tabular}{||c c c c c c||} 
+ \hline
+ a & b & c & f1 & f2 & f3 \\ [0.5ex] 
+ \hline\hline
+ 0 & 0 & 0 & 0 & 0 & 0\\ 
+ \hline
+ 0 & 0 & 1 & 0 & 0 & 1\\
+ \hline
+ 0 & 1 & 1 & 0 & 1 & 0\\
+ \hline
+ 0 & 1 & 0 & 0 & 1 & 1\\
+ \hline
+ 1 & 1 & 0 & 1 & 0 & 0\\ 
+ \hline
+ 1 & 1 & 1 & 1 & 0 & 1\\
+ \hline
+ 1 & 0 & 1 & 1 & 1 & 0\\
+ \hline
+ 1 & 0 & 0 & 1 & 1 & 1\\ 
+ \hline 
+\end{tabular}
+\end{center}
+\textbf{Circuitul:}\\
+\begin{circuitikz}
+    \draw (0,0) node[anchor=east] {a} to[short, o-] (2,0);
+    \draw (0,-2) node[anchor=east] {b} to[short, o-] (2,-2);
+    \draw (0,-4) node[anchor=east] {c}to[short, o-] (2,-4);
+    \draw (2,0) -- (10,0) node[anchor=west] {f1};
+    \draw (6,-1) node[xor port] (myxor) {}
+        (myxor.in 1) -- ++(-1,0) |- (2,0)
+        (myxor.in 2) -- ++(-1,0) |- (2,-2)
+        (myxor.out) -- ++(4,0) node[anchor=west] {f2};
+    \draw (9,-3) node[xor port] (myxor2) {}
+        (myxor2.in 1) -- ++(-1,0) |- (myxor.out)
+        (myxor2.in 2) -- ++(-1,0) |- (2,-4)
+        (myxor2.out) -- ++(1,0) node[anchor=west] {f3};
+\end{circuitikz}
+\end{document}
