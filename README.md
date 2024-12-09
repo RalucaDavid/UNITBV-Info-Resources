@@ -5,21 +5,21 @@
 
 ### Semester 1
 - 🧮 **Mathematical analysis (AM)**  
-- 🧮 **Algebraic foundations of computer science (FAI)**  
-- 💻 **Fundamental algorithms (AF)**
+- 🧮 **Algebraic foundations of computer science (FAI)** - [Available here](https://github.com/RalucaDavid/UNITBV-Info-Resources/tree/main/Year-1/Semester-1/FAI)
+- 💻 **Fundamental algorithms (AF)** - [Available here](https://github.com/RalucaDavid/UNITBV-Info-Resources/tree/main/Year-1/Semester-1/AF)
 - 💻 **Fundamentals of programming (FP)**  
 - 🧮 **Mathematical and computational logic (LMC)** 
-- 📝 **Scientific and professional writing and communication (RCSP)**
-- 📚 **German language 1**
+- 📝 **Scientific and professional writing and communication (RCSP)** - [Available here](https://github.com/RalucaDavid/UNITBV-Info-Resources/tree/main/Year-1/Semester-1/RCSP)
+- 📚 **German language 1** - [Available here](https://github.com/RalucaDavid/UNITBV-Info-Resources/tree/main/Year-1/Semester-1/GERMAN)
 
 ### Semester 2
 - 🧮 **Linear algebra, analytical and differential geometry (ALGAD)**  
-- 💻 **Computer Systems Arhitecture (ASC)**
+- 💻 **Computer Systems Arhitecture (ASC)** - [Available here](https://github.com/RalucaDavid/UNITBV-Info-Resources/tree/main/Year-1/Semester-2/ASC)
 - 💻 **Object Oriented Programming (POO)**
-- 💻 **Data structures (SD)**
-- 💻 **Operating systems (SO)**
+- 💻 **Data structures (SD)** - [Available here](https://github.com/RalucaDavid/UNITBV-Info-Resources/tree/main/Year-1/Semester-2/SD)
+- 💻 **Operating systems (SO)** - [Available here](https://github.com/RalucaDavid/UNITBV-Info-Resources/tree/main/Year-1/Semester-2/SO)
 - 🏃 **Physical education and sport 1**
-- 📚 **German language 2**
+- 📚 **German language 2** - [Available here](https://github.com/RalucaDavid/UNITBV-Info-Resources/tree/main/Year-1/Semester-2/GERMAN)
   
 ---
 
