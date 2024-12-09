@@ -29,13 +29,13 @@
 - 💻 **Algorithmic graphs (AG)** - [Available here](https://github.com/RalucaDavid/Algorithmic-Graphs-Homeworks)
 - 💻 **Formal languages ​​and compilers (LFC)**  
 - 💻 **Programming environments and tools (MIP)** - [Available here](https://github.com/RalucaDavid/School-Catalog)
-- 💻 **Databases (BD)**  
+- 💻 **Databases (BD)** - [Available here](https://github.com/RalucaDavid/UNITBV-Info-Resources/tree/main/Year-2/Semester-1/BD)
 - 💻 **Artificial intelligence (IA)** 
 - 💻 **Modern C++ managing networking projects (MC) - OPTIONAL** - [Available here](https://github.com/RalucaDavid/Gartic)
 - 🏃 **Physical education and sport 1**
 
 ### Semester 2
-- 💻 **Automata, computability and complexity (ACC)**  
+- 💻 **Automata, computability and complexity (ACC)** - [Available here](https://github.com/RalucaDavid/UNITBV-Info-Resources/tree/main/Year-2/Semester-2/ACC)
 - 💻 **Advanced programming methods (MAP)**
 - 💻 **Rețele de calculatoare (RC)**
 - 🧮 **Numerical calculation (CN)**
