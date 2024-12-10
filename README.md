@@ -27,7 +27,7 @@
 
 ### Semester 1
 - 💻 **Algorithmic graphs (AG)** - [Available here](https://github.com/RalucaDavid/Algorithmic-Graphs-Homeworks)
-- 💻 **Formal languages ​​and compilers (LFC)**  
+- 💻 **Formal languages ​​and compilers (LFC)** - [Available here](https://github.com/RalucaDavid/UNITBV-Info-Resources/tree/main/Year-2/Semester-1/LFC)  
 - 💻 **Programming environments and tools (MIP)** - [Available here](https://github.com/RalucaDavid/School-Catalog)
 - 💻 **Databases (BD)** - [Available here](https://github.com/RalucaDavid/UNITBV-Info-Resources/tree/main/Year-2/Semester-1/BD)
 - 💻 **Artificial intelligence (IA)** 
@@ -37,7 +37,7 @@
 ### Semester 2
 - 💻 **Automata, computability and complexity (ACC)** - [Available here](https://github.com/RalucaDavid/UNITBV-Info-Resources/tree/main/Year-2/Semester-2/ACC)
 - 💻 **Advanced programming methods (MAP)**
-- 💻 **Rețele de calculatoare (RC)**
+- 💻 **Computer Networks (RC)** - [Available here](https://github.com/RalucaDavid/Computer-Networks-Homeworks)
 - 🧮 **Numerical calculation (CN)**
 - 💻 **Modern 3D modeling systems in C++ (S3D) - OPTIONAL** 
 - 💻 **Build a real-time app using Angular, Net Core and SignalR	(BRTA) - OPTIONAL**
@@ -47,12 +47,12 @@
 ## 📅 **Year 3**
 
 ### Semester 1
-- 💻 **Software engineering (IS)**  
+- 💻 **Software engineering (IS)** - [Available here](https://github.com/RalucaDavid/Software-Engineering-Homeworks)  
 - 💻 **Human-computer interfaces (IOC)**  
-- 💻 **Web application development (DAW)**
+- 💻 **Web application development (DAW)** - [Available here](https://github.com/RalucaDavid/Web-Application-Development-Homeworks)
 - 💼 **Specialized practice**  
 - 💻 **Human computer interaction (IOCU) - OPTIONAL** 
-- 💻 **Software design patterns (SPS) - OPTIONAL** 
+- 💻 **Software design patterns (SPS) - OPTIONAL** - [Available here](https://github.com/RalucaDavid/Software-Design-Patterns-Exercises)
 
 ### Semester 2
 - 💻 **IT project management ()**  
