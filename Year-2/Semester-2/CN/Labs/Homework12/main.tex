@@ -1,0 +1,112 @@
+% LaTeX Template For MATH 490 @ VCU
+\documentclass{article}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{xcolor}
+
+%%%%%%%%%% EXACT 1in MARGINS + DOUBEL SPACED %%%%%%%
+% NOTE IF YOU USE 1IN MARGINS CHANGE THE FONT 	  %%
+% SIZE TO 12PT IN THE FIRST LINE OF THIS DOCUMENT %%
+%\linespread{2}									  %%
+%\setlength{\textwidth}{6.5in}     				  %%
+%\setlength{\oddsidemargin}{0in}   				  %% 
+%\setlength{\evensidemargin}{0in}  				  %%
+%\setlength{\textheight}{8.5in}    				  %%
+%\setlength{\topmargin}{0in}      				  %%
+%\setlength{\headheight}{0in}     				  %%
+%\setlength{\headsep}{0in}       				  %%
+%\setlength{\footskip}{.5in}    				  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\begin{document}
+
+\title{Calcul numeric - tem\u{a} de laborator}
+
+\author{}
+
+\date{Februarie - Mai 2024}
+
+\maketitle              % typeset the title of the contribution
+
+
+% You don't need an abstract or keywords for an article review
+%\begin{abstract}
+%The abstract should summarize the contents of the paper
+%using at least 70 and at most 150 words. It will be set in 9-point
+%font size and be inset 1.0 cm from the right and left margins.
+%There will be two blank lines before and after the Abstract. \dots
+%\keywords{List up to three keywords here, like this:
+%computational geometry, graph theory, Hamilton cycles}
+%\end{abstract}
+
+
+% TO MAKE A TITLE PAGE USE THE FOLLOWING COMMAND HERE.
+% \newpage
+
+
+
+
+\section*{Enun\c{t}: Capitolul 11, Subcapitolul II, Problema 5}
+
+S\u{a} se calculeze jacobianul și hessianul funcțiilor în punctul indicat:
+\[
+f(x, y) = \begin{cases}
+x^3 + y^3 - 6x + 3  & (x,y) = (1,2) \\
+x^3 - y^3 - 6y + 2 
+\end{cases}
+\]
+
+\section*{Solu\c{t}ie}
+
+\begin{center}
+\begin{enumerate}
+\item  Definim funcția f. \\
+\begin{center}
+     syms x y; \\
+     f1 = $x^3$ + $y^3$ - 6*x + 3; \\
+     f2 = $x^3$ - $y^3$ - 6*y + 2;
+\end{center}
+\item Calculăm jacobianul prin apelarea funcției jacobian. \\
+ \begin{center}
+    jacobian\_matrix = jacobian([f1, f2], [x, y]);
+ \end{center}
+\item Calculăm jacobianul în punctul (1,2). \\
+ \begin{center}
+    jacobian\_at\_point = double(subs(jacobian\_matrix, [x, y], [1, 2]));
+ \end{center}
+ \item Calculăm hessianul fiecărei funcții.\\
+ \begin{center}
+    hessian\_matrix\_f1 = hessian(f1, [x, y]); \\
+    hessian\_matrix\_f2 = hessian(f2, [x, y]);
+ \end{center}
+  \item Calculăm hessianul în punctul (1,2). \\
+ \begin{center}
+    hessian\_at\_point\_f1 = double(subs(hessian\_matrix\_f1, [x, y], [1, 2]));
+    hessian\_at\_point\_f2 = double(subs(hessian\_matrix\_f2, [x, y], [1, 2]));
+ \end{center}
+\end{enumerate}
+\end{center}
+
+\section*{Rezultat}
+\begin{center}
+  jacobian\_at\_point=
+\begin{pmatrix}
+-3 & 12\\
+ 3 & -18 
+\end{pmatrix} \\
+hessian\_at\_point\_f1=
+\begin{pmatrix}
+6 & 0\\
+ 0 & 12
+\end{pmatrix} \\
+hessian\_at\_point\_f2=
+\begin{pmatrix}
+6 & 0\\
+ 0 & -12
+\end{pmatrix} 
+\end{center}
+\end{document}

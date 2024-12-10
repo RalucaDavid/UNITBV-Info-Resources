@@ -1,0 +1,120 @@
+% LaTeX Template For MATH 490 @ VCU
+\documentclass{article}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{xcolor}
+
+%%%%%%%%%% EXACT 1in MARGINS + DOUBEL SPACED %%%%%%%
+% NOTE IF YOU USE 1IN MARGINS CHANGE THE FONT 	  %%
+% SIZE TO 12PT IN THE FIRST LINE OF THIS DOCUMENT %%
+%\linespread{2}									  %%
+%\setlength{\textwidth}{6.5in}     				  %%
+%\setlength{\oddsidemargin}{0in}   				  %% 
+%\setlength{\evensidemargin}{0in}  				  %%
+%\setlength{\textheight}{8.5in}    				  %%
+%\setlength{\topmargin}{0in}      				  %%
+%\setlength{\headheight}{0in}     				  %%
+%\setlength{\headsep}{0in}       				  %%
+%\setlength{\footskip}{.5in}    				  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\begin{document}
+
+\title{Calcul numeric - tem\u{a} de laborator}
+
+\author{}
+
+\date{Februarie - Mai 2024}
+
+\maketitle              % typeset the title of the contribution
+
+
+% You don't need an abstract or keywords for an article review
+%\begin{abstract}
+%The abstract should summarize the contents of the paper
+%using at least 70 and at most 150 words. It will be set in 9-point
+%font size and be inset 1.0 cm from the right and left margins.
+%There will be two blank lines before and after the Abstract. \dots
+%\keywords{List up to three keywords here, like this:
+%computational geometry, graph theory, Hamilton cycles}
+%\end{abstract}
+
+
+% TO MAKE A TITLE PAGE USE THE FOLLOWING COMMAND HERE.
+% \newpage
+
+
+
+
+\section*{Enun\c{t}: Capitolul 12, Subcapitolul I, Problema 5}
+
+S\u{a} se calculeze polinoamele de aproximare de grad unu, doi si trei construite prin metoda celor mai mici pătrate pentru datele Problemei 1 din capitolul
+Interpolare:
+\[
+f(x) = \sin(x),
+\quad x_i = -\frac{\pi}{2} + i \cdot \frac{\pi}{10},
+\quad i \in \{0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10\},
+\quad z = \frac{\pi}{13}
+\] 
+
+\section*{Solu\c{t}ie}
+
+\begin{center}
+\begin{enumerate}
+\item  Definim datele problemei. \\
+\begin{center}
+f = @(x) sin(x); \\
+i = 0:10; \\
+x = -pi/2 + i*pi/10; \\
+z = pi / 13;
+\end{center}
+\item Calculăm valorile lui f(x). \\
+ \begin{center}
+    y = f(x);
+ \end{center}
+\item Calculăm coeficienții polinomului de gradul unu. \\
+ \begin{center}
+     c1=lq(1,x,y);
+ \end{center}
+ \item Calculăm coeficienții polinomului de gradul doi.\\
+ \begin{center}
+    c2=lq(2,x,y);
+ \end{center}
+  \item Calculăm coeficienții polinomului de gradul trei. \\
+ \begin{center}
+    c3=lq(3,x,y);
+ \end{center}
+\end{enumerate}
+\end{center}
+
+\section*{Rezultat}
+\begin{center}
+$
+c1 =\begin{pmatrix}
+   0 \\
+   0.7359
+\end{pmatrix}
+$ 
+\\
+$
+c2 =\begin{pmatrix}
+0 \\
+0.7359 \\
+-0.0000 \\
+\end{pmatrix}
+$ 
+\\
+$
+c3 =\begin{pmatrix}
+0.0000 \\
+0.9858 \\
+-0.0000 \\
+-0.1422 \\
+\end{pmatrix}
+$
+\end{center}
+\end{document}

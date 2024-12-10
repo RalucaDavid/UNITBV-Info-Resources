@@ -1,0 +1,94 @@
+% LaTeX Template For MATH 490 @ VCU
+\documentclass{article}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{xcolor}
+
+%%%%%%%%%% EXACT 1in MARGINS + DOUBEL SPACED %%%%%%%
+% NOTE IF YOU USE 1IN MARGINS CHANGE THE FONT 	  %%
+% SIZE TO 12PT IN THE FIRST LINE OF THIS DOCUMENT %%
+%\linespread{2}									  %%
+%\setlength{\textwidth}{6.5in}     				  %%
+%\setlength{\oddsidemargin}{0in}   				  %% 
+%\setlength{\evensidemargin}{0in}  				  %%
+%\setlength{\textheight}{8.5in}    				  %%
+%\setlength{\topmargin}{0in}      				  %%
+%\setlength{\headheight}{0in}     				  %%
+%\setlength{\headsep}{0in}       				  %%
+%\setlength{\footskip}{.5in}    				  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\begin{document}
+
+\title{Calcul numeric - tem\u{a} de laborator}
+
+\author{}
+
+\date{Februarie - Mai 2024}
+
+\maketitle              % typeset the title of the contribution
+
+
+% You don't need an abstract or keywords for an article review
+%\begin{abstract}
+%The abstract should summarize the contents of the paper
+%using at least 70 and at most 150 words. It will be set in 9-point
+%font size and be inset 1.0 cm from the right and left margins.
+%There will be two blank lines before and after the Abstract. \dots
+%\keywords{List up to three keywords here, like this:
+%computational geometry, graph theory, Hamilton cycles}
+%\end{abstract}
+
+
+% TO MAKE A TITLE PAGE USE THE FOLLOWING COMMAND HERE.
+% \newpage
+
+
+
+
+\section*{Enun\c{t}: Capitolul 11, Subcapitolul I, Problema 3}
+
+S\u{a} se calculeze derivate funcțiilor în punctul indicat:
+
+\begin{center}
+f(x) = x - 2\cos(x), \quad $x_0$=1
+
+\end{center}
+
+\section*{Solu\c{t}ie}
+
+\begin{center}
+\begin{enumerate}
+\item  Definim funcția f. \\
+\begin{center}
+    syms x;\\
+    f = x - 2*cos(x);
+\end{center}
+\item Calculăm derivata de ordinul I al funcției f. \\
+ \begin{center}
+    f\_dev\_first = diff(f, x);
+ \end{center}
+\item Calculăm derivata de ordinul II al funcției f. \\
+ \begin{center}
+    f\_dev\_second = diff(f\_dev\_first, x);
+ \end{center}
+ \item Calculăm derivata de ordinul I în punctul $x_0$.\\
+ \begin{center}
+    f\_dev\_first\_value = double(subs(f\_dev\_first, x, x0));
+ \end{center}
+  \item Calculăm derivata de ordinul II în punctul $x_0$. \\
+ \begin{center}
+    f\_dev\_second\_value = double(subs(f\_dev\_second, x, x0));
+ \end{center}
+\end{enumerate}
+\end{center}
+
+\section*{Rezultat}
+\begin{center}
+f\_dev\_first\_value = 2.6829 \\ f\_dev\_second\_value = 1.0806
+\end{center}
+\end{document}

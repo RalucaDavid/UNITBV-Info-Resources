@@ -1,0 +1,31 @@
+Rezultate pentru problema Capitolul 10, Subcapitolul I, Problema 5:
+Verificare PolinomInterpolareLagrangeBaricentrica: 0.239316
+Rezultate pentru Teorema 2.4.2:
+Ex1Recursiv: 0.239316
+Ex1Iterativ: 0.239316
+Rezultate pentru Teorema 2.4.4:
+Ex2Recursiv: -1.000000
+Ex2Recursiv: 0.155792
+Ex2Recursiv: 0.471630
+Ex2Recursiv: -0.074737
+Ex2Recursiv: -0.033159
+Ex2Recursiv: 0.005773
+Ex2Recursiv: 0.000796
+Ex2Recursiv: -0.000172
+Ex2Recursiv: -0.000007
+Ex2Recursiv: 0.000003
+Ex2Recursiv: -0.000000
+Ex2Iterativ: -1.000000
+Ex2Iterativ: 0.155792
+Ex2Iterativ: 0.471630
+Ex2Iterativ: -0.074737
+Ex2Iterativ: -0.033159
+Ex2Iterativ: 0.005773
+Ex2Iterativ: 0.000796
+Ex2Iterativ: -0.000172
+Ex2Iterativ: -0.000007
+Ex2Iterativ: 0.000003
+Ex2Iterativ: 0.000000
+Rezultate pentru Teorema 2.4.7:
+Ex3Recursiv: 0.239316
+Ex3Iterativ: 0.239316

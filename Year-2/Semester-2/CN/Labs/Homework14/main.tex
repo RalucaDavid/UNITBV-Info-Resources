@@ -1,0 +1,97 @@
+% LaTeX Template For MATH 490 @ VCU
+\documentclass{article}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{xcolor}
+
+%%%%%%%%%% EXACT 1in MARGINS + DOUBEL SPACED %%%%%%%
+% NOTE IF YOU USE 1IN MARGINS CHANGE THE FONT 	  %%
+% SIZE TO 12PT IN THE FIRST LINE OF THIS DOCUMENT %%
+%\linespread{2}									  %%
+%\setlength{\textwidth}{6.5in}     				  %%
+%\setlength{\oddsidemargin}{0in}   				  %% 
+%\setlength{\evensidemargin}{0in}  				  %%
+%\setlength{\textheight}{8.5in}    				  %%
+%\setlength{\topmargin}{0in}      				  %%
+%\setlength{\headheight}{0in}     				  %%
+%\setlength{\headsep}{0in}       				  %%
+%\setlength{\footskip}{.5in}    				  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\begin{document}
+
+\title{Calcul numeric - tem\u{a} de laborator}
+
+\author{}
+
+\date{Februarie - Mai 2024}
+
+\maketitle              % typeset the title of the contribution
+
+
+% You don't need an abstract or keywords for an article review
+%\begin{abstract}
+%The abstract should summarize the contents of the paper
+%using at least 70 and at most 150 words. It will be set in 9-point
+%font size and be inset 1.0 cm from the right and left margins.
+%There will be two blank lines before and after the Abstract. \dots
+%\keywords{List up to three keywords here, like this:
+%computational geometry, graph theory, Hamilton cycles}
+%\end{abstract}
+
+
+% TO MAKE A TITLE PAGE USE THE FOLLOWING COMMAND HERE.
+% \newpage
+
+
+
+
+\section*{Enun\c{t}: Capitolul 12, Subcapitolul II, Problema 1}
+
+S\u{a} se calculeze funcțiile de aproximare construite prin metoda celor mai
+mici pătrate pentru metoda Gauss-Newton de forma și datele indicate (t = 0 : 9):
+\[
+\phi(t) = a \ln(bt + c)
+\]
+
+\[
+y = 2 \ln(3t + 1)
+\] 
+
+\section*{Solu\c{t}ie}
+
+\begin{center}
+\begin{enumerate}
+\item  Definim datele problemei. \\
+\begin{center}
+t = (0:9)'; \\
+y = 2 * log(3 * t + 1); \\
+\end{center}
+\item Definim funcția model. \\
+ \begin{center}
+    model = @(params, t) params(1) * log(params(2) * t + params(3));
+ \end{center}
+\item Alegem punctele de pornire.\\
+ \begin{center}
+     initialParams = [2, 3, 1];
+ \end{center}
+ \item Alegem opțiunile pentru algoritmul Gauss-Newton.\\
+ \begin{center}
+    options = optimoptions('lsqcurvefit', 'Algorithm', 'levenberg-marquardt', 'Display', 'off');
+ \end{center}
+  \item Aplicăm metoda Gauss-Newton folosind lsqcurvefit\\
+ \begin{center}
+    [optimizedParams, resnorm, residual, exitflag, output] = lsqcurvefit(model, initialParams, t, y, [], [], options);
+ \end{center}
+\end{enumerate}
+\end{center}
+
+\section*{Rezultat}
+\begin{center}
+a = 2, b = 3, c = 1
+\end{center}
+\end{document}

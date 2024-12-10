@@ -1,0 +1,99 @@
+% LaTeX Template For MATH 490 @ VCU
+\documentclass{article}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{xcolor}
+
+%%%%%%%%%% EXACT 1in MARGINS + DOUBEL SPACED %%%%%%%
+% NOTE IF YOU USE 1IN MARGINS CHANGE THE FONT 	  %%
+% SIZE TO 12PT IN THE FIRST LINE OF THIS DOCUMENT %%
+%\linespread{2}									  %%
+%\setlength{\textwidth}{6.5in}     				  %%
+%\setlength{\oddsidemargin}{0in}   				  %% 
+%\setlength{\evensidemargin}{0in}  				  %%
+%\setlength{\textheight}{8.5in}    				  %%
+%\setlength{\topmargin}{0in}      				  %%
+%\setlength{\headheight}{0in}     				  %%
+%\setlength{\headsep}{0in}       				  %%
+%\setlength{\footskip}{.5in}    				  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\begin{document}
+
+\title{Calcul numeric - tem\u{a} de laborator}
+
+\author{}
+
+\date{Februarie - Mai 2024}
+
+\maketitle              % typeset the title of the contribution
+
+
+% You don't need an abstract or keywords for an article review
+%\begin{abstract}
+%The abstract should summarize the contents of the paper
+%using at least 70 and at most 150 words. It will be set in 9-point
+%font size and be inset 1.0 cm from the right and left margins.
+%There will be two blank lines before and after the Abstract. \dots
+%\keywords{List up to three keywords here, like this:
+%computational geometry, graph theory, Hamilton cycles}
+%\end{abstract}
+
+
+% TO MAKE A TITLE PAGE USE THE FOLLOWING COMMAND HERE.
+% \newpage
+
+
+
+
+\section*{Enun\c{t}: Capitolul 10, Subcapitolul III, Problema 5}
+
+S\u{a} se calculeze valoarea funcției spline cubice de interpolare pentru datele
+problemei I.
+
+\begin{center}
+\[
+f(x) = \sin(x),
+\quad x_i = -\frac{\pi}{2} + i \cdot \frac{\pi}{10},
+\quad i \in \{0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10\},
+\quad z = \frac{\pi}{13}
+\] 
+
+\end{center}
+
+\section*{Solu\c{t}ie}
+
+\begin{center}
+\begin{enumerate}
+\item  Definim punctele $x_i$. \\
+\begin{center}
+    xi = (-pi/2:pi/10:pi/2);
+\end{center}
+\item Definim valorile funcției f. \\
+ \begin{center}
+    yi = sin(xi);
+ \end{center}
+\item Definim punctul de evaluare. \\
+ \begin{center}
+    z = pi/13;
+ \end{center}
+ \item Calculăm interpolarea splinei cubice \\
+ \begin{center}
+    spline\_interpolant = spline(xi, yi);
+ \end{center}
+  \item Evaluăm funcția splină cubică în punctul z. \\
+ \begin{center}
+    spline\_interpolated\_value = ppval(spline\_interpolant, z);
+ \end{center}
+\end{enumerate}
+\end{center}
+
+\section*{Rezultat}
+\begin{center}
+spline\_interpolated\_value = 0.2393
+\end{center}
+\end{document}

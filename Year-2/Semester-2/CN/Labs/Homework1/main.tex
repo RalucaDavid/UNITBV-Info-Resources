@@ -1,0 +1,118 @@
+% LaTeX Template For MATH 490 @ VCU
+\documentclass{article}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+
+%%%%%%%%%% EXACT 1in MARGINS + DOUBEL SPACED %%%%%%%
+% NOTE IF YOU USE 1IN MARGINS CHANGE THE FONT 	  %%
+% SIZE TO 12PT IN THE FIRST LINE OF THIS DOCUMENT %%
+%\linespread{2}									  %%
+%\setlength{\textwidth}{6.5in}     				  %%
+%\setlength{\oddsidemargin}{0in}   				  %% 
+%\setlength{\evensidemargin}{0in}  				  %%
+%\setlength{\textheight}{8.5in}    				  %%
+%\setlength{\topmargin}{0in}      				  %%
+%\setlength{\headheight}{0in}     				  %%
+%\setlength{\headsep}{0in}       				  %%
+%\setlength{\footskip}{.5in}    				  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\begin{document}
+
+\title{Calcul numeric - tem\u{a} de laborator}
+
+\author{}
+
+\date{Februarie - Mai 2024}
+
+\maketitle              % typeset the title of the contribution
+
+
+% You don't need an abstract or keywords for an article review
+%\begin{abstract}
+%The abstract should summarize the contents of the paper
+%using at least 70 and at most 150 words. It will be set in 9-point
+%font size and be inset 1.0 cm from the right and left margins.
+%There will be two blank lines before and after the Abstract. \dots
+%\keywords{List up to three keywords here, like this:
+%computational geometry, graph theory, Hamilton cycles}
+%\end{abstract}
+
+
+% TO MAKE A TITLE PAGE USE THE FOLLOWING COMMAND HERE.
+% \newpage
+
+
+
+
+\section*{Enun\c{t}: Capitolul 8, Subcapitolul I, Problema 1}
+
+S\u{a} se calculeze polinoamele de aproximare de grad unu, doi si trei construite prin metoda celor mai mici pătrate pentru datele Problemei 1 din capitolul Interpolare.
+\begin{center}
+$
+A=\begin{pmatrix}
+10 & 6 & -2 & 1\\
+10 & 10 & -5 & 0\\
+-2 & 2 & -2 & 1\\
+1 & 3 & -2 & 3
+\end{pmatrix}
+$
+\end{center}
+
+\section*{Solu\c{t}ie}
+
+\begin{center}
+\begin{enumerate}
+    \item 
+    Declarăm matricea A. \\
+    \begin{center}
+    A = [10,6,-2,1; 10,10,-5,0; -2,2,-2,1; 1,3,-2,3];
+    \end{center}
+    \item 
+    Apelăm funcția lu pentru calcularea factorizării LU a matricei A. \\
+    \begin{center}
+    [L,U,P]=lu(A)
+    \end{center}
+\end{enumerate}
+\end{center}
+
+\section*{Rezultat}
+\begin{center}
+$
+L =\begin{pmatrix}
+
+    1.0000  &       0  &       0  &       0\\
+    1.0000  &  1.0000  &       0  &       0\\
+    -0.2000  &  0.8000  &  1.0000  &       0\\
+    0.1000  &  0.6000  &  -0.5000  &  1.0000
+\end{pmatrix}
+$
+\end{center}
+
+\begin{center}
+$
+U =\begin{pmatrix}
+  10.0000  &  6.0000  &  -2.0000  &  1.0000\\
+    0  &  4.0000 & -3.0000 &  -1.0000\\
+    0  & 0  &  0.0000  & 2.0000\\
+    0  & 0  &  0  &  4.5000
+\end{pmatrix}
+$
+\end{center} 
+
+\begin{center}
+$
+P =\begin{pmatrix}
+  1  &   0  &   0   & 0\\
+  0  &   1  &   0   &  0\\
+  0  &   0  &   1   &  0\\
+  0  &   0  &   0   &  1
+\end{pmatrix}
+$
+\end{center}
+
+\end{document}

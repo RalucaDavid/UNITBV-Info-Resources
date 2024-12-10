@@ -1,0 +1,106 @@
+% LaTeX Template For MATH 490 @ VCU
+\documentclass{article}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{xcolor}
+
+%%%%%%%%%% EXACT 1in MARGINS + DOUBEL SPACED %%%%%%%
+% NOTE IF YOU USE 1IN MARGINS CHANGE THE FONT 	  %%
+% SIZE TO 12PT IN THE FIRST LINE OF THIS DOCUMENT %%
+%\linespread{2}									  %%
+%\setlength{\textwidth}{6.5in}     				  %%
+%\setlength{\oddsidemargin}{0in}   				  %% 
+%\setlength{\evensidemargin}{0in}  				  %%
+%\setlength{\textheight}{8.5in}    				  %%
+%\setlength{\topmargin}{0in}      				  %%
+%\setlength{\headheight}{0in}     				  %%
+%\setlength{\headsep}{0in}       				  %%
+%\setlength{\footskip}{.5in}    				  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\begin{document}
+
+\title{Calcul numeric - tem\u{a} de laborator}
+
+\author{}
+
+\date{Februarie - Mai 2024}
+
+\maketitle              % typeset the title of the contribution
+
+
+% You don't need an abstract or keywords for an article review
+%\begin{abstract}
+%The abstract should summarize the contents of the paper
+%using at least 70 and at most 150 words. It will be set in 9-point
+%font size and be inset 1.0 cm from the right and left margins.
+%There will be two blank lines before and after the Abstract. \dots
+%\keywords{List up to three keywords here, like this:
+%computational geometry, graph theory, Hamilton cycles}
+%\end{abstract}
+
+
+% TO MAKE A TITLE PAGE USE THE FOLLOWING COMMAND HERE.
+% \newpage
+
+
+
+
+\section*{Enun\c{t}: Capitolul 10, Subcapitolul II, Problema 5}
+
+S\u{a} se deducă expresia polinomului de interpolare pentru datele problemei
+I:
+
+\begin{center}
+\[
+f(x) = \sin(x),
+\quad x_i = -\frac{\pi}{2} + i \cdot \frac{\pi}{10},
+\quad i \in \{0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10\},
+\quad z = \frac{\pi}{13}
+\] 
+
+\end{center}
+
+\section*{Solu\c{t}ie}
+
+\begin{center}
+\begin{enumerate}
+\item Definim funcția f.\\
+ \begin{center}
+    f = @(x) sin(x);
+    \end{center}
+\item  Definim valorile lui $x_i$. \\
+\begin{center}
+    xi = -pi/2 + (0:10)*pi/10;
+\end{center}
+\item Definim valoarea lui z. \\
+ \begin{center}
+    z = pi/13;
+ \end{center}
+\item Calculăm gradului polinomului. \\
+ \begin{center}
+    grad = length(xi) - 1;
+ \end{center}
+ \item Ajustăm polinomul de interpolare. \\
+ \begin{center}
+    coef = polyfit(xi, f(xi), grad);
+ \end{center}
+  \item Construim polinomul de interpolare. \\
+ \begin{center}
+    polinom = poly2sym(coef);
+ \end{center}
+\end{enumerate}
+\end{center}
+
+\section*{Rezultat}
+$\frac{5845419439946349}{2535301200456458802993406410752} \cdot x^{10} + \frac{6192979824596231}{2361183241434822606848} \cdot x^9 - \frac{7753445309256651}{633825300114114700748351602688} \cdot x^8 - \frac{913899863490885}{4611686018427387904} \cdot x^7 + \frac{6860929148312471}{316912650057057350374175801344} \cdot x^6 + \frac{4803736910141451}{576460752303423488} \cdot x^5 - \frac{4742251131395917}{316912650057057350374175801344} \cdot x^4 - \frac{6004797759129527}{36028797018963968} \cdot x^3 + \frac{2255690891732239}{633825300114114700748351602688} \cdot x^2 + \frac{9007199225352387}{9007199254740992} \cdot x - \frac{3517712254454825}{20282409603651670423947251286016} = 0$
+
+
+
+\section*{Observație}
+A trebuit să instalez \textbf{Symbolic Math Toolbox} pentru a folosi funcția polyfit.
+\end{document}

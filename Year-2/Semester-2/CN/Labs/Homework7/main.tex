@@ -1,0 +1,92 @@
+% LaTeX Template For MATH 490 @ VCU
+\documentclass{article}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{xcolor}
+
+%%%%%%%%%% EXACT 1in MARGINS + DOUBEL SPACED %%%%%%%
+% NOTE IF YOU USE 1IN MARGINS CHANGE THE FONT 	  %%
+% SIZE TO 12PT IN THE FIRST LINE OF THIS DOCUMENT %%
+%\linespread{2}									  %%
+%\setlength{\textwidth}{6.5in}     				  %%
+%\setlength{\oddsidemargin}{0in}   				  %% 
+%\setlength{\evensidemargin}{0in}  				  %%
+%\setlength{\textheight}{8.5in}    				  %%
+%\setlength{\topmargin}{0in}      				  %%
+%\setlength{\headheight}{0in}     				  %%
+%\setlength{\headsep}{0in}       				  %%
+%\setlength{\footskip}{.5in}    				  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\begin{document}
+
+\title{Calcul numeric - tem\u{a} de laborator}
+
+\author{}
+
+\date{Februarie - Mai 2024}
+
+\maketitle              % typeset the title of the contribution
+
+
+% You don't need an abstract or keywords for an article review
+%\begin{abstract}
+%The abstract should summarize the contents of the paper
+%using at least 70 and at most 150 words. It will be set in 9-point
+%font size and be inset 1.0 cm from the right and left margins.
+%There will be two blank lines before and after the Abstract. \dots
+%\keywords{List up to three keywords here, like this:
+%computational geometry, graph theory, Hamilton cycles}
+%\end{abstract}
+
+
+% TO MAKE A TITLE PAGE USE THE FOLLOWING COMMAND HERE.
+% \newpage
+
+
+
+
+\section*{Enun\c{t}: Capitolul 9, Subcapitolul III, Problema 3}
+
+S\u{a} se rezolve sistemele algebrice de ecua¸tii neliniare:
+
+\begin{center}
+\begin{align*}
+\begin{cases}
+e^{-x^y}=x^2-y+1\\
+(x+0.5)^2+y^2=0.6\\
+ \end{cases}
+\end{align*}
+\end{center}
+
+\section*{Solu\c{t}ie}
+
+\begin{center}
+\begin{enumerate}
+\item Definim funcția anonimă care calculează rezultatul sistemului de ecuații ( x=$x\textsubscript{1}$, y=$x\textsubscript{2}$ ). \\
+ \begin{center}
+    \[
+    equations = @(x) [exp(-x(1)\^{}x(2)) - x(1)\^{}2 + x(2) - 1;
+                  (x(1)+0.5)\^{}2+ x(2)\^{}2 - 0.6];
+\] 
+    \end{center}
+\item  Alegem o soluție inițială (aproximativă). \\
+\begin{center}
+    x0 = [0; 0];
+    \end{center}
+\item Rezolvăm sistemul prin apelarea funcției fsolve. \\
+\begin{center}
+    x = fsolve(equations, x0);
+    \end{center}
+\end{enumerate}
+\end{center}
+
+\section*{Rezultat}
+\begin{center}
+   $x\textsubscript{1}$  = 0.16037; $x\textsubscript{2}$  = 0.40486
+\end{center}
+\end{document}
