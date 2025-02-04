@@ -39,7 +39,7 @@
 - 💻 **Advanced programming methods (MAP)**
 - 💻 **Computer Networks (RC)** - [Available here](https://github.com/RalucaDavid/Computer-Networks-Homeworks)
 - 🧮 **Numerical calculation (CN)** - [Available here](https://github.com/RalucaDavid/UNITBV-Info-Resources/tree/main/Year-2/Semester-2/CN)
-- 💻 **Modern 3D modeling systems in C++ (S3D) - OPTIONAL** 
+- 💻 **Modern 3D modeling systems in C++ (S3D) - OPTIONAL** - [Available here](https://github.com/RalucaDavid/UNITBV-Info-Resources/tree/main/Year-2/Semester-2/S3D)
 - 💻 **Build a real-time app using Angular, Net Core and SignalR	(BRTA) - OPTIONAL**
   
 ---
