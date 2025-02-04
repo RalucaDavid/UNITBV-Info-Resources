@@ -1,6 +1,6 @@
 # 💻 Operating systems (SO) 
 
-🎓 This folder contains the assignments (with explanations) done as part of this course.
+🎓 This folder contains the homeworks (with explanations) done as part of this course.
 
 <ul>
   <li>
