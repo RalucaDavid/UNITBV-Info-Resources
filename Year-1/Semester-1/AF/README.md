@@ -1,6 +1,6 @@
 # 💻 Fundamental algorithms (AF) 
 
-🎓 This folder contains the labs from this course that I did, solving two models for partial 1 and several helper subprograms..
+🎓 This folder contains the labs from this course that I did, solving two models for partial 1 and several helper subprograms.
 
 <ul>
   <li>
