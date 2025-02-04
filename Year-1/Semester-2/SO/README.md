@@ -28,7 +28,7 @@
      <strong>Homework 8</strong>
   </li>
    <li>
-     <strong>Additional homework</strong>
+     <strong>Additional homework</strong> - ❌
   </li>
 </ul>
 
