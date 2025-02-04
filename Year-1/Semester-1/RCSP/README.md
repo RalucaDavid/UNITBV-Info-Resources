@@ -1,4 +1,4 @@
-# 💻 Fundamental algorithms (AF) 
+# 📝 Scientific and professional writing and communication (RCSP)
 
 🎓 This folder contains the homeworks done as part of this course.
 
