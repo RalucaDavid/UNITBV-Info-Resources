@@ -57,9 +57,9 @@ The homeworks, projects and labs I did during the Bachelor degree in Computer Sc
 - 💻 **Software design patterns (SPS) - OPTIONAL** - [Available here](https://github.com/RalucaDavid/Software-Design-Patterns-Exercises)
 
 ### Semester 2
-- 💻 **IT project management ()**  
-- 💻 **Parallel, concurrent and distributed programming ()**
-- 🧮 **Probabilities and statistics ()**
+- 💻 **IT project management (MPI)**  
+- 💻 **Parallel, concurrent and distributed programming (PPCD)**
+- 🧮 **Probabilities and statistics (PS)**
 - 💻 **Practice for the elaboration of the bachelor's thesis**
-- 💻 **Mobile application programming () - OPTIONAL** 
-- 💻 **Programming in the Cloud with Java	() - OPTIONAL**
+- 💻 **Mobile application programming (PAM) - OPTIONAL** 
+- 💻 **Programming in the Cloud with Java (PCJ) - OPTIONAL**
