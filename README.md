@@ -59,7 +59,7 @@ The homeworks, projects and labs I did during the Bachelor degree in Computer Sc
 ### Semester 2
 - 💻 **IT project management (MPI)**  
 - 💻 **Parallel, concurrent and distributed programming (PPCD)**
-- 🧮 **Probabilities and statistics (PS)**
+- 🧮 **Probabilities and statistics (PS)** - [Available here](https://github.com/RalucaDavid/UNITBV-Info-Resources/tree/main/Year-3/Semester-2/PS)
 - 💻 **Practice for the elaboration of the bachelor's thesis**
 - 💻 **Mobile application programming (PAM) - OPTIONAL** 
 - 💻 **Programming in the Cloud with Java (PCJ) - OPTIONAL**
