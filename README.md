@@ -1,5 +1,3 @@
-## Information
-The homeworks, projects and labs I did during the Bachelor degree in Computer Science at UNITBV.
 
 ---
 
