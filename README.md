@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/be6bc8a0-a6d1-4c53-84c0-af99d9078e43)
+
 ---
 
 ## 📅 **Year 1**
