@@ -1,4 +1,4 @@
-
+![image](https://github.com/user-attachments/assets/be6bc8a0-a6d1-4c53-84c0-af99d9078e43)
 ---
 
 ## 📅 **Year 1**
@@ -55,9 +55,9 @@
 - 💻 **Software design patterns (SPS) - OPTIONAL** - [Available here](https://github.com/RalucaDavid/Software-Design-Patterns-Exercises)
 
 ### Semester 2
-- 💻 **IT project management (MPI)**  
-- 💻 **Parallel, concurrent and distributed programming (PPCD)**
+- 💻 **IT project management (MPI)** - [Available here](https://github.com/RalucaDavid/gradebook)
+- 💻 **Parallel, concurrent and distributed programming (PPCD)** - [Available here](https://github.com/RalucaDavid/UNITBV-Info-Resources/tree/main/Year-3/Semester-2/PPCD)
 - 🧮 **Probabilities and statistics (PS)** - [Available here](https://github.com/RalucaDavid/UNITBV-Info-Resources/tree/main/Year-3/Semester-2/PS)
 - 💻 **Practice for the elaboration of the bachelor's thesis**
-- 💻 **Mobile application programming (PAM) - OPTIONAL** 
+- 💻 **Mobile application programming (PAM) - OPTIONAL** - [Available here](https://github.com/RalucaDavid/SuperMarioApp)
 - 💻 **Programming in the Cloud with Java (PCJ) - OPTIONAL**
